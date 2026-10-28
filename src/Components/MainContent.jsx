@@ -5,6 +5,10 @@ import useScrollReavel from "/src/Components/useScrollReveal.js";
 import LatestEvents from "./LatestEvents";
 import DailyDevotionals from "./DailyDevotionals";
 
+import AboutImage from "/src/Images/JOOUST_CU_Family_v4.jpg";
+
+import WhatWeDoImg from "/src/Images/JOOUST_CU_Family_v2.jpg";
+
 export default function MainContent() {
   useScrollReavel();
 
@@ -78,7 +82,7 @@ export default function MainContent() {
         </div>
         <div className="about-image">
           <img
-            src="./src/Images/JOOUST_CU_Family_v4.jpg"
+            src={AboutImage}
             alt="JOOUST Family Of Christians"
             className="about-family-image"
           />
@@ -114,7 +118,7 @@ export default function MainContent() {
 
         <div className="about-image">
           <img
-            src="./src/Images/JOOUST_CU_Family_v2.jpg"
+            src={WhatWeDoImg}
             alt="JOOUST Family Of Christians"
             className="about-family-image"
           />
