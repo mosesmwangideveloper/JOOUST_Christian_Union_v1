@@ -1,15 +1,12 @@
 import useMobileMenu from "./index";
+import logo from "/src/Images/JOOUST_CU_Logo_v1.jpg";
 
 export default function Header() {
   const { isOpen, toggleMenu, closeMenu } = useMobileMenu();
 
   return (
     <header className="header">
-      <img
-        src="./src/Images/JOOUST_CU_Logo_v1.jpg"
-        alt="JOOUST Christian Union logo"
-        className="logo-icon"
-      />
+      <img src={logo} alt="JOOUST Christian Union logo" className="logo-icon" />
 
       <button
         className="hamburger-btn"

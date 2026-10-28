@@ -1,3 +1,5 @@
+import logo from "/src/Images/JOOUST_CU_Logo_v1.jpg";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -6,7 +8,7 @@ export default function Footer() {
       <div className="footer-row">
         <div className="footer-col footer-brand">
           <img
-            src="/src/Images/JOOUST_CU_Logo_v1.jpg"
+            src={logo}
             alt="JOOUST Logo"
             className="footer-logo"
             loading="lazy"

@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import ExecutiveCard from "./ExecutiveCard";
-import ExecutiveData from "./Executive_data";
+import members from "/src/Components/Executive_data.js";
 import useScrollReavel from "/src/Components/useScrollReveal.js";
 import LatestEvents from "./LatestEvents";
 import DailyDevotionals from "./DailyDevotionals";
@@ -8,11 +8,11 @@ import DailyDevotionals from "./DailyDevotionals";
 export default function MainContent() {
   useScrollReavel();
 
-  const stages = [4, 8, ExecutiveData.length];
+  const stages = [4, 8, members.length];
 
   const [stage, setStage] = useState(0);
 
-  const visibleMembers = ExecutiveData.slice(0, stages[stage]);
+  const visibleMembers = members.slice(0, stages[stage]);
 
   const isLastStage = stage === stages.length - 1;
 

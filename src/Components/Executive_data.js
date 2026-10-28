@@ -1,4 +1,4 @@
-export default [
+const members = [
   {
     id: 1,
     name: "Lilly Simaloi Dikirr",
@@ -119,3 +119,5 @@ export default [
     phone: "",
   },
 ];
+
+export default members;
